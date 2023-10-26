@@ -1,5 +1,5 @@
 import styles from "./inputcomponent.module.scss";
-interface InputComponentProps {
+export interface InputComponentProps {
   customPlaceHolder: string;
   customLabel: string;
   customInputType: string;

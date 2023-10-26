@@ -1,6 +1,6 @@
 import styles from "./buttonComponent.module.scss";
 
-type ButtonProps = {
+ export type ButtonProps = {
   backgroundColor: string;
   buttonText: string;
 };
