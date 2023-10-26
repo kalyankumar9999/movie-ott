@@ -25,4 +25,11 @@
     font-weight: 400;
     line-height: normal;
   }
+  .inputFieldError {
+    border: 3px solid #bb261a;
+  }
+  .inputFieldErrorText {
+    color:#bb261a;
+    font-size: 12px;
+  }
 }
