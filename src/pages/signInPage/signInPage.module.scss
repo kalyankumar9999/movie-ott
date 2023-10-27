@@ -1,0 +1,163 @@
+.signInContainer {
+  background: linear-gradient(
+      131deg,
+      #130908 -32.04%,
+      rgba(19, 9, 8, 0) -32.02%,
+      #370c0f 100%
+    ),
+    url("../../assets/loginBackImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .brandNameContainer {
+    margin-bottom: 10px;
+
+    .brandName {
+      text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.9);
+      color: #bb261a;
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  .signIncontent {
+    display: flex;
+    flex-direction: row;
+    background: #1d253a;
+    border-radius: 12px;
+    max-width: 870px;
+    width: 100%;
+
+    .signInForm {
+      border-radius: 12px;
+      background: #000;
+      width: 50%;
+
+      .signInText {
+        text-align: center;
+        margin-top: 10%;
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        span {
+          color: #bb261a;
+        }
+      }
+      .signInInputFields {
+        margin: 10%;
+      }
+      .signInButton {
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 15%;
+      }
+    }
+    .signUpContent {
+      background-color: #1d253a;
+
+      height: 100%;
+      width: 50%;
+      .welcomText {
+        margin-top: 8%;
+        margin-bottom: 15%;
+        text-align: center;
+        color: #62d5ba;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        span {
+          color: #eb3223;
+        }
+      }
+      .signUpPlayIcon {
+        text-align: center;
+        margin-bottom: 10%;
+        .playIcon {
+          height: 155px;
+          width: 155px;
+        }
+      }
+      .signUpText {
+        color: #fafafa;
+        text-align: center;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 10%;
+        span {
+          color: #62d5ba;
+        }
+      }
+      .signUpButton {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 820px) {
+  .signInContainer {
+    padding: 5%;
+
+    .brandNameContainer {
+      // padding-top: 10%;
+    }
+    .signIncontent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: transparent;
+      gap: 30px;
+      .signInForm,
+      .signUpContent {
+        width: 100%;
+        min-width: 260px;
+      }
+      .signInForm {
+        .signInText {
+          margin-top: 2%;
+        }
+        .signInInputFields {
+          margin: 0% 10% 4% 10%;
+        }
+        .signInButton {
+          margin-top: 1%;
+          margin-bottom: 6%;
+        }
+      }
+      .signUpContent {
+        border-radius: 8px;
+        .welcomText {
+          margin-top: 2%;
+          margin-bottom: 5%;
+        }
+        .signUpPlayIcon {
+          margin-bottom: 3%;
+          .playIcon {
+            height: 60px;
+            width: 60px;
+          }
+        }
+        .signUpText {
+          margin: 5%;
+        }
+        .signUpButton {
+          margin-bottom: 6%;
+        }
+      }
+    }
+  }
+}
